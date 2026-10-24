@@ -25,227 +25,135 @@
         table { width: 100%; border-collapse: collapse; margin-top: 10px; }
         th, td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; }
         th { background: #f1f3f5; font-weight: 600; }
-        td a {
-            color: #2980b9;
-            text-decoration: none;
-            font-family: Consolas, 'Courier New', monospace;
-            font-size: 0.9em;
-        }
-        td a:hover { text-decoration: underline; }
+        td img { max-width: 150px; height: auto; border: 1px solid #ddd; border-radius: 4px; display: block; }
         .highlight { background: #fff8e1; font-weight: 600; }
         .footer { margin-top: 40px; font-size: 0.9em; color: #7f8c8d; text-align: center; }
+        .scope-badge { display: inline-block; background: #e3f2fd; color: #1565c0; padding: 4px 12px; border-radius: 16px; font-size: 0.85em; margin-top: 10px; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🚗 Fleet Video Analysis Portal</h1>
         <p>Top 10 Highest-Risk Clips (24-hour Analysis — 2026-10-24)</p>
+        <div class="scope-badge">Scope: ADAS/DMS — Vehicle ID &gt; 7 digits</div>
 
         <div class="card">
-            <h2>📊 Top 10 Highest-Risk Clips</h2>
+            <h2>📊 Top 10 Highest-Risk Clips (Vehicle ID &gt; 7 digits)</h2>
             <table>
                 <thead>
                     <tr>
                         <th>#</th>
+                        <th>Vehicle ID</th>
                         <th>Vehicle Plate</th>
                         <th>Company</th>
                         <th>Warning Type</th>
                         <th>Possibility</th>
-                        <th>Frame (embedded)</th>
+                        <th>Frame</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
+                        <td>096895479219</td>
                         <td>TS93-3722MS</td>
-                        <td>Tanzania</td>
+                        <td>AWT - TRANSPORT</td>
                         <td>FCW</td>
                         <td>57.8%</td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020400.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-120653-120713-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-130216-130236-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020300.jpg" style="max-width:140px;height:auto;border:1px solid #ddd;border-radius:4px;" alt="Frame 1"></td>
+                        <td><img src="assets/images/000035_20-260926-154359-154419-20020100.jpg" alt="Front view — FCW"></td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>TS93-3722MS</td>
-                        <td>Tanzania</td>
+                        <td>096895418216</td>
+                        <td>NDL5097-D</td>
+                        <td>AWT - TRANSPORT</td>
                         <td>FCW</td>
                         <td>49.7%</td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020400.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-120653-120713-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-130216-130236-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020400.jpg" style="max-width:140px;height:auto;border:1px solid #ddd;border-radius:4px;" alt="Frame 2"></td>
+                        <td><img src="assets/images/000035_20-260926-153057-153117-20020100.jpg" alt="Front view — FCW"></td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>QSU4835</td>
+                        <td>096895479570</td>
+                        <td>AW09-853YM</td>
                         <td>Song Transport Kuching</td>
                         <td>FCW</td>
                         <td>49.7%</td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020400.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-120653-120713-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-130216-130236-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020200.jpg" style="max-width:140px;height:auto;border:1px solid #ddd;border-radius:4px;" alt="Frame 3"></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>QSU4835</td>
-                        <td>Song Transport Kuching</td>
-                        <td>FCW</td>
-                        <td>24.9%</td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020400.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-120653-120713-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-130216-130236-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020300.jpg" style="max-width:140px;height:auto;border:1px solid #ddd;border-radius:4px;" alt="Frame 4"></td>
+                        <td><img src="assets/images/000035_20-260926-154339-154359-20020100.jpg" alt="Front view — FCW"></td>
                     </tr>
                     <tr class="highlight">
-                        <td>5</td>
-                        <td>QSU4835</td>
+                        <td>4</td>
+                        <td>096895479590</td>
+                        <td>AW11-7775MR</td>
                         <td>Song Transport Kuching</td>
                         <td>FCW</td>
-                        <td>24.7%</td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020400.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-120653-120713-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-130216-130236-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-120653-120713-20020300.jpg" style="max-width:140px;height:auto;border:1px solid #ddd;border-radius:4px;" alt="Frame 5"></td>
+                        <td>34.0%</td>
+                        <td><img src="assets/images/000028_20-260925-130216-130236-20020100.jpg" alt="Front view — FCW"></td>
                     </tr>
                     <tr>
-                        <td>6</td>
-                        <td>250064</td>
-                        <td>Tanzania</td>
-                        <td>FCW</td>
-                        <td>33.2%</td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020400.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-120653-120713-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-130216-130236-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-130216-130236-20020100.jpg" style="max-width:140px;height:auto;border:1px solid #ddd;border-radius:4px;" alt="Frame 6"></td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>250065</td>
-                        <td>Tanzania</td>
-                        <td>FCW</td>
-                        <td>32.8%</td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020400.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-120653-120713-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-130216-130236-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020100.jpg" style="max-width:140px;height:auto;border:1px solid #ddd;border-radius:4px;" alt="Frame 7"></td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
+                        <td>5</td>
+                        <td>096892317954</td>
                         <td>2171WK</td>
                         <td>SHANFARI SALALAH</td>
                         <td>FCW</td>
                         <td>24.9%</td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020400.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-120653-120713-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-130216-130236-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020200.jpg" style="max-width:140px;height:auto;border:1px solid #ddd;border-radius:4px;" alt="Frame 8"></td>
+                        <td><img src="assets/images/000028_20-260925-130216-130236-20020100.jpg" alt="Front view — FCW"></td>
                     </tr>
                     <tr>
-                        <td>9</td>
+                        <td>6</td>
+                        <td>096895479520</td>
+                        <td>AW24-5447BM</td>
+                        <td>Song Transport Kuching</td>
+                        <td>FCW</td>
+                        <td>24.9%</td>
+                        <td><img src="assets/images/000035_20-260926-153208-153228-20020100.jpg" alt="Front view — FCW"></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>096879364953</td>
+                        <td>AW12-7799MR</td>
+                        <td>AWT - TRANSPORT</td>
+                        <td>FCW</td>
+                        <td>24.7%</td>
+                        <td><img src="assets/images/000035_20-260926-153219-153239-20020100.jpg" alt="Front view — FCW"></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
                         <td>096895479151</td>
+                        <td>AW16-6797RA</td>
                         <td>AWT - TRANSPORT</td>
                         <td>FCW</td>
                         <td>24.9%</td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020400.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-120653-120713-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-130216-130236-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020100.jpg" style="max-width:140px;height:auto;border:1px solid #ddd;border-radius:4px;" alt="Frame 9"></td>
+                        <td><img src="assets/images/000035_20-260926-153317-153337-20020100.jpg" alt="Front view — FCW"></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>096892328474</td>
+                        <td>5752HM</td>
+                        <td>SHANFARI SALALAH</td>
+                        <td>Fatigue</td>
+                        <td>34.0%</td>
+                        <td><img src="assets/images/000021_20-260926-135337-135357-20020200.jpg" alt="Cabin view — Fatigue"></td>
                     </tr>
                     <tr>
                         <td>10</td>
-                        <td>096895479570</td>
-                        <td>Song Transport Kuching</td>
-                        <td>FCW</td>
-                        <td>34.0%</td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000014_20-260926-124217-124237-20020400.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-120653-120713-20020300.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000028_20-260925-130216-130236-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-152708-152728-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020100.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020200.jpg" style="max-width:120px;height:auto;display:block;"></td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020200.jpg" style="max-width:140px;height:auto;border:1px solid #ddd;border-radius:4px;" alt="Frame 10"></td>
+                        <td>096895479298</td>
+                        <td>AW17-4583MH</td>
+                        <td>AWT - TRANSPORT</td>
+                        <td>Fatigue</td>
+                        <td>24.9%</td>
+                        <td><img src="assets/images/000021_20-260926-135337-135357-20020200.jpg" alt="Cabin view — Fatigue"></td>
                     </tr>
                 </tbody>
             </table>
+            <p><em>Frame images selected from front camera (ch01) for FCW warnings, cabin camera (ch02) for fatigue warnings.</em></p>
         </div>
 
         <div class="card">
-            <h2>📈 Top Risk Vehicles (24h)</h2>
+            <h2>📈 Top Risk Vehicles (24h — ID &gt; 7 digits)</h2>
             <table>
                 <thead>
                     <tr>
                         <th>Vehicle ID</th>
-                        <th>Plate</th>
+                        <th>Vehicle Plate</th>
                         <th>Company</th>
                         <th>Warning</th>
                         <th>Possibility</th>
@@ -255,37 +163,73 @@
                     <tr>
                         <td>096895479219</td>
                         <td>TS93-3722MS</td>
-                        <td>Tanzania</td>
+                        <td>AWT - TRANSPORT</td>
                         <td>FCW</td>
                         <td>57.8%</td>
                     </tr>
                     <tr>
-                        <td>T490DPZ</td>
-                        <td>TS93-3722MS</td>
-                        <td>Tanzania</td>
+                        <td>096895418216</td>
+                        <td>NDL5097-D</td>
+                        <td>AWT - TRANSPORT</td>
                         <td>FCW</td>
                         <td>49.7%</td>
                     </tr>
                     <tr>
-                        <td>T227EAE</td>
-                        <td>250065</td>
-                        <td>Tanzania</td>
-                        <td>FCW</td>
-                        <td>32.8%</td>
-                    </tr>
-                    <tr>
-                        <td>T183DLW</td>
-                        <td>250064</td>
-                        <td>Tanzania</td>
-                        <td>FCW</td>
-                        <td>33.2%</td>
-                    </tr>
-                    <tr>
-                        <td>QM193E</td>
-                        <td>QSU4835</td>
+                        <td>096895479570</td>
+                        <td>AW09-853YM</td>
                         <td>Song Transport Kuching</td>
                         <td>FCW</td>
                         <td>49.7%</td>
+                    </tr>
+                    <tr>
+                        <td>096895479590</td>
+                        <td>AW11-7775MR</td>
+                        <td>Song Transport Kuching</td>
+                        <td>FCW</td>
+                        <td>34.0%</td>
+                    </tr>
+                    <tr>
+                        <td>096892317954</td>
+                        <td>2171WK</td>
+                        <td>SHANFARI SALALAH</td>
+                        <td>FCW</td>
+                        <td>24.9%</td>
+                    </tr>
+                    <tr>
+                        <td>096895479520</td>
+                        <td>AW24-5447BM</td>
+                        <td>Song Transport Kuching</td>
+                        <td>FCW</td>
+                        <td>24.9%</td>
+                    </tr>
+                    <tr>
+                        <td>096879364953</td>
+                        <td>AW12-7799MR</td>
+                        <td>AWT - TRANSPORT</td>
+                        <td>FCW</td>
+                        <td>24.7%</td>
+                    </tr>
+                    <tr>
+                        <td>096895479151</td>
+                        <td>AW16-6797RA</td>
+                        <td>AWT - TRANSPORT</td>
+                        <td>FCW</td>
+                        <td>24.9%</td>
+                    </tr>
+                    <tr>
+                        <td>096892328474</td>
+                        <td>5752HM</td>
+                        <td>SHANFARI SALALAH</td>
+                        <td>Fatigue</td>
+                        <td>34.0%</td>
+                    </tr>
+                    <tr>
+                        <td>096895479298</td>
+                        <td>AW17-4583MH</td>
+                        <td>AWT - TRANSPORT</td>
+                        <td>Fatigue</td>
+                        <td>24.9%</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -300,7 +244,7 @@
             </ol>
         </div>
         <div class="footer">
-            <p>Generated 2026-10-24 | ADAS/DMS risk assessment | All percentages audited</p>
+            <p>Generated 2026-10-24 | ADAS/DMS risk assessment | Vehicle ID &gt; 7 digits only | All percentages audited</p>
         </div>
     </div>
 </body>
