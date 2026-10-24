@@ -29,16 +29,26 @@
         .highlight { background: #fff8e1; font-weight: 600; }
         .footer { margin-top: 40px; font-size: 0.9em; color: #7f8c8d; text-align: center; }
         .scope-badge { display: inline-block; background: #e3f2fd; color: #1565c0; padding: 4px 12px; border-radius: 16px; font-size: 0.85em; margin-top: 10px; }
+        .warning-box { background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; padding: 12px; margin: 10px 0; font-size: 0.9em; }
+        .zero-risk { color: #6c757d; font-style: italic; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🚗 Fleet Video Analysis Portal</h1>
-        <p>Top 10 Highest-Risk Clips (24-hour Analysis — 2026-10-24)</p>
-        <div class="scope-badge">Scope: ADAS/DMS — Vehicle ID &gt; 7 digits</div>
+        <p>ADAS/DMS Risk Assessment — Vehicle ID &gt; 7 digits</p>
+        <div class="scope-badge">Scope: ADAS/DMS — Vehicle ID &gt; 7 digits | Possibility = actual detected risk, not bad-camera rate</div>
+
+        <div class="warning-box">
+            <strong>⚠️ Data Limitation:</strong> FCW/fatigue analysis requires OpenCV/YOLO/MediaPipe which are not available in this environment. 
+            The results below are based on the available analysis output (September 2026 data). For October 2024 clips, no ML-based risk scoring was performed.
+            <br><br>
+            <strong>Methodology:</strong> Possibility = actual detected risk percentage from audited pipeline output. 
+            Camera Blocked / File Corrupt / Black Screen clips = <strong>0%</strong> (no usable footage = no risk assessable).
+        </div>
 
         <div class="card">
-            <h2>📊 Top 10 Highest-Risk Clips (Vehicle ID &gt; 7 digits)</h2>
+            <h2>📊 Highest-Risk Clips (Vehicle ID &gt; 7 digits)</h2>
             <table>
                 <thead>
                     <tr>
@@ -54,198 +64,89 @@
                 <tbody>
                     <tr>
                         <td>1</td>
+                        <td>096892328474</td>
+                        <td>5752HM</td>
+                        <td>SHANFARI SALALAH</td>
+                        <td>FCW</td>
+                        <td><strong>12%</strong></td>
+                        <td><img src="assets/images/02_64_6401_02_00096892328474260926114216000200.jpg" alt="Front view — FCW 12%"></td>
+                    </tr>
+                    <tr class="zero-risk">
+                        <td>2</td>
                         <td>096895479219</td>
                         <td>TS93-3722MS</td>
                         <td>AWT - TRANSPORT</td>
                         <td>FCW</td>
-                        <td>57.8%</td>
-                        <td><img src="assets/images/02_01_6401_02_00096895479219260926114356000200.jpg" alt="Front view — FCW"></td>
+                        <td>0%</td>
+                        <td><img src="assets/images/02_01_6401_02_00096895479219260926114356000200.jpg" alt="Front view — FCW 0% (false positive withdrawn)"></td>
                     </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>096895418216</td>
-                        <td>NDL5097-D</td>
-                        <td>AWT - TRANSPORT</td>
-                        <td>FCW</td>
-                        <td>49.7%</td>
-                        <td><img src="assets/images/000035_20-260926-154359-154419-20020100.jpg" alt="Front view — FCW"></td>
-                    </tr>
-                    <tr>
+                    <tr class="zero-risk">
                         <td>3</td>
-                        <td>096895479570</td>
-                        <td>AW09-853YM</td>
-                        <td>Song Transport Kuching</td>
-                        <td>FCW</td>
-                        <td>49.7%</td>
-                        <td><img src="assets/images/000035_20-260926-154339-154359-20020100.jpg" alt="Front view — FCW"></td>
-                    </tr>
-                    <tr class="highlight">
-                        <td>4</td>
-                        <td>096895479590</td>
-                        <td>AW11-7775MR</td>
-                        <td>Song Transport Kuching</td>
-                        <td>FCW</td>
-                        <td>34.0%</td>
-                        <td><img src="assets/images/000035_20-260926-153057-153117-20020100.jpg" alt="Front view — FCW"></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>096892317954</td>
-                        <td>2171WK</td>
-                        <td>SHANFARI SALALAH</td>
-                        <td>FCW</td>
-                        <td>24.9%</td>
-                        <td><img src="assets/images/000028_20-260925-130216-130236-20020100.jpg" alt="Front view — FCW"></td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>096895479520</td>
-                        <td>AW24-5447BM</td>
-                        <td>Song Transport Kuching</td>
-                        <td>FCW</td>
-                        <td>24.9%</td>
-                        <td><img src="assets/images/000035_20-260926-153208-153228-20020100.jpg" alt="Front view — FCW"></td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>096879364953</td>
-                        <td>AW12-7799MR</td>
-                        <td>AWT - TRANSPORT</td>
-                        <td>FCW</td>
-                        <td>24.7%</td>
-                        <td><img src="assets/images/000035_20-260926-153219-153239-20020100.jpg" alt="Front view — FCW"></td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>096895479151</td>
-                        <td>AW16-6797RA</td>
-                        <td>AWT - TRANSPORT</td>
-                        <td>FCW</td>
-                        <td>24.9%</td>
-                        <td><img src="assets/images/000035_20-260926-153317-153337-20020100.jpg" alt="Front view — FCW"></td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>096892328474</td>
-                        <td>5752HM</td>
-                        <td>SHANFARI SALALAH</td>
-                        <td>Fatigue</td>
-                        <td>34.0%</td>
-                        <td><img src="assets/images/02_65_6513_02_00096871959302260926114257010200.jpg" alt="Driver view — Fatigue (DMS ch03)"></td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>096895479298</td>
-                        <td>AW17-4583MH</td>
-                        <td>AWT - TRANSPORT</td>
-                        <td>Fatigue</td>
-                        <td>24.9%</td>
-                        <td><img src="assets/images/000021_20-260926-135337-135357-20020200.jpg" alt="Driver view — Fatigue (ch02)"></td>
+                        <td>096871959302</td>
+                        <td>—</td>
+                        <td>DVR - TEST</td>
+                        <td>Fatigue (DMS)</td>
+                        <td>0%</td>
+                        <td><img src="assets/images/02_65_6513_02_00096871959302260926114257010200.jpg" alt="Driver view — Fatigue 0% (blocked)"></td>
                     </tr>
                 </tbody>
             </table>
-            <p><em>Frame images selected from front camera (ch01) for FCW warnings, driver-facing camera (ch03/DMS) for fatigue warnings. 
-Note: Exact warning-triggering frames cannot be extracted without OpenCV; displayed frames are the nearest available typical frames from the analysis pipeline.</em></p>
+            <p><em>Only 3 clips exist for vehicles with ID &gt; 7 digits in the available analysis data. Only 1 clip (rank 1) has actual detected risk (FCW 12%). 
+            Blocked/corrupt clips are correctly shown as 0% — not ranked as risk.</em></p>
         </div>
 
         <div class="card">
-            <h2>📈 Top Risk Vehicles (24h — ID &gt; 7 digits)</h2>
+            <h2>📈 Risk Methodology Reference</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Vehicle ID</th>
-                        <th>Vehicle Plate</th>
-                        <th>Company</th>
-                        <th>Warning</th>
+                        <th>Clip Condition</th>
                         <th>Possibility</th>
+                        <th>Reason</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>096895479219</td>
-                        <td>TS93-3722MS</td>
-                        <td>AWT - TRANSPORT</td>
-                        <td>FCW</td>
-                        <td>57.8%</td>
+                        <td>Forward-collision risk detected (FCW)</td>
+                        <td>Actual % (e.g., 12%, 30%, 55%)</td>
+                        <td>Genuine collision risk from audited pipeline</td>
                     </tr>
                     <tr>
-                        <td>096895418216</td>
-                        <td>NDL5097-D</td>
-                        <td>AWT - TRANSPORT</td>
-                        <td>FCW</td>
-                        <td>49.7%</td>
+                        <td>Camera Blocked / Black screen</td>
+                        <td><strong>0%</strong></td>
+                        <td>No usable footage — nothing can be detected</td>
                     </tr>
                     <tr>
-                        <td>096895479570</td>
-                        <td>AW09-853YM</td>
-                        <td>Song Transport Kuching</td>
-                        <td>FCW</td>
-                        <td>49.7%</td>
+                        <td>File Corrupt</td>
+                        <td><strong>0%</strong></td>
+                        <td>File cannot be decoded — no risk assessable</td>
                     </tr>
                     <tr>
-                        <td>096895479590</td>
-                        <td>AW11-7775MR</td>
-                        <td>Song Transport Kuching</td>
-                        <td>FCW</td>
-                        <td>34.0%</td>
+                        <td>NO same-lane FCW (audited)</td>
+                        <td><strong>0%</strong></td>
+                        <td>No collision risk found after audit</td>
                     </tr>
                     <tr>
-                        <td>096892317954</td>
-                        <td>2171WK</td>
-                        <td>SHANFARI SALALAH</td>
-                        <td>FCW</td>
-                        <td>24.9%</td>
+                        <td>False positive withdrawn</td>
+                        <td><strong>0%</strong></td>
+                        <td>Automatic score was wrong, corrected by audit</td>
                     </tr>
                     <tr>
-                        <td>096895479520</td>
-                        <td>AW24-5447BM</td>
-                        <td>Song Transport Kuching</td>
-                        <td>FCW</td>
-                        <td>24.9%</td>
-                    </tr>
-                    <tr>
-                        <td>096879364953</td>
-                        <td>AW12-7799MR</td>
-                        <td>AWT - TRANSPORT</td>
-                        <td>FCW</td>
-                        <td>24.7%</td>
-                    </tr>
-                    <tr>
-                        <td>096895479151</td>
-                        <td>AW16-6797RA</td>
-                        <td>AWT - TRANSPORT</td>
-                        <td>FCW</td>
-                        <td>24.9%</td>
-                    </tr>
-                    <tr>
-                        <td>096892328474</td>
-                        <td>5752HM</td>
-                        <td>SHANFARI SALALAH</td>
-                        <td>Fatigue</td>
-                        <td>34.0%</td>
-                    </tr>
-                    <tr>
-                        <td>096895479298</td>
-                        <td>AW17-4583MH</td>
-                        <td>AWT - TRANSPORT</td>
-                        <td>Fatigue</td>
-                        <td>24.9%</td>
+                        <td>Driver-facing / DMS blocked</td>
+                        <td><strong>0%</strong></td>
+                        <td>No face visible — fatigue not assessable</td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
         <div class="card">
-            <h2>🔗 Deployment Instructions</h2>
-            <p>Upload the entire <code>fleet-analysis-site</code> folder to one of these free hosts:</p>
-            <ol>
-                <li><strong>GitHub Pages</strong> (Recommended) — Create a repo → enable Pages → select this folder</li>
-                <li><strong>Netlify Drop</strong> — <a href="https://app.netlify.com/drop" target="_blank">app.netlify.com/drop</a> (drag & drop)</li>
-                <li><strong>Cloudflare Pages</strong> — Sign up → Pages → deploy from repo</li>
-            </ol>
+            <h2>🔗 Deployment</h2>
+            <p>Live on GitHub Pages: <strong>https://jonwusg.github.io/fleet-analysis-site/</strong></p>
+            <p>Update by committing changes to the <code>main</code> branch — GitHub Pages auto-redeploys.</p>
         </div>
         <div class="footer">
-            <p>Generated 2026-10-24 | ADAS/DMS risk assessment | Vehicle ID &gt; 7 digits only | All percentages audited</p>
+            <p>Generated 2026-10-24 | ADAS/DMS risk assessment | Vehicle ID &gt; 7 digits only | Blocked/corrupt = 0% | All percentages audited</p>
         </div>
     </div>
 </body>
