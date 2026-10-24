@@ -5,14 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fleet Video Analysis Portal</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; margin: 0; padding: 20px; background: #f8f9fa; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 20px; 
+            background: #f8f9fa;
+        }
         .container { max-width: 1200px; margin: 0 auto; }
         h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-        .card { background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 20px; margin-bottom: 20px; }
+        .card { 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+            padding: 20px; 
+            margin-bottom: 20px; 
+        }
         .card h2 { color: #34495e; margin-top: 0; }
         table { width: 100%; border-collapse: collapse; margin-top: 10px; }
         th, td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; }
         th { background: #f1f3f5; font-weight: 600; }
+        td a {
+            color: #2980b9;
+            text-decoration: none;
+            font-family: Consolas, 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        td a:hover { text-decoration: underline; }
         .highlight { background: #fff8e1; font-weight: 600; }
         .footer { margin-top: 40px; font-size: 0.9em; color: #7f8c8d; text-align: center; }
     </style>
@@ -32,7 +51,7 @@
                         <th>Company</th>
                         <th>Warning Type</th>
                         <th>Possibility</th>
-                        <th>Frame</th>
+                        <th>Video Clip (click to play)</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -42,7 +61,7 @@
                         <td>Tanzania</td>
                         <td>FCW</td>
                         <td>57.8%</td>
-                        <td>02_64_6401_02_00008060824232261024101428010200.mp4</td>
+                        <td><a href="02_64_6401_02_00008060824232261024101428010200.mp4">02_64_6401_02_00008060824232261024101428010200.mp4</a></td>
                     </tr>
                     <tr>
                         <td>2</td>
@@ -50,7 +69,7 @@
                         <td>Tanzania</td>
                         <td>FCW</td>
                         <td>49.7%</td>
-                        <td>02_64_6401_02_00096895479321261024035949000200.mp4</td>
+                        <td><a href="02_64_6401_02_00096895479321261024035949000200.mp4">02_64_6401_02_00096895479321261024035949000200.mp4</a></td>
                     </tr>
                     <tr>
                         <td>3</td>
@@ -58,7 +77,7 @@
                         <td>Song Transport Kuching</td>
                         <td>FCW</td>
                         <td>49.7%</td>
-                        <td>02_64_6401_02_00096895479321261024035949000200.mp4</td>
+                        <td><a href="02_64_6401_02_00096895479321261024035949000200.mp4">02_64_6401_02_00096895479321261024035949000200.mp4</a></td>
                     </tr>
                     <tr>
                         <td>4</td>
@@ -66,7 +85,7 @@
                         <td>Song Transport Kuching</td>
                         <td>FCW</td>
                         <td>24.9%</td>
-                        <td>02_64_6401_02_00096895479219260926114356000200.mp4</td>
+                        <td><a href="02_64_6401_02_00096895479219260926114356000200.mp4">02_64_6401_02_00096895479219260926114356000200.mp4</a></td>
                     </tr>
                     <tr class="highlight">
                         <td>5</td>
@@ -74,7 +93,7 @@
                         <td>Song Transport Kuching</td>
                         <td>FCW</td>
                         <td>24.7%</td>
-                        <td>02_64_6401_02_00096895479219260926114356000200.mp4</td>
+                        <td><a href="02_64_6401_02_00096895479219260926114356000200.mp4">02_64_6401_02_00096895479219260926114356000200.mp4</a></td>
                     </tr>
                     <tr>
                         <td>6</td>
@@ -82,7 +101,7 @@
                         <td>Tanzania</td>
                         <td>FCW</td>
                         <td>33.2%</td>
-                        <td>02_64_6401_02_00096892328474261024073928000200.mp4</td>
+                        <td><a href="02_64_6401_02_00096892328474261024073928000200.mp4">02_64_6401_02_00096892328474261024073928000200.mp4</a></td>
                     </tr>
                     <tr>
                         <td>7</td>
@@ -90,7 +109,7 @@
                         <td>Tanzania</td>
                         <td>FCW</td>
                         <td>32.8%</td>
-                        <td>02_64_6401_02_00096895479321261024114635000200.mp4</td>
+                        <td><a href="02_64_6401_02_00096895479321261024114635000200.mp4">02_64_6401_02_00096895479321261024114635000200.mp4</a></td>
                     </tr>
                     <tr>
                         <td>8</td>
@@ -98,7 +117,7 @@
                         <td>SHANFARI SALALAH</td>
                         <td>FCW</td>
                         <td>24.9%</td>
-                        <td>02_64_6404_02_00096892317954261024044940000200.mp4</td>
+                        <td><a href="02_64_6404_02_00096892317954261024044940000200.mp4">02_64_6404_02_00096892317954261024044940000200.mp4</a></td>
                     </tr>
                     <tr>
                         <td>9</td>
@@ -106,7 +125,7 @@
                         <td>AWT - TRANSPORT</td>
                         <td>FCW</td>
                         <td>24.9%</td>
-                        <td>02_03_6513_02_00096895479219260926114356000200.mp4</td>
+                        <td><a href="02_03_6513_02_00096895479219260926114356000200.mp4">02_03_6513_02_00096895479219260926114356000200.mp4</a></td>
                     </tr>
                     <tr>
                         <td>10</td>
@@ -114,7 +133,7 @@
                         <td>Song Transport Kuching</td>
                         <td>FCW</td>
                         <td>34.0%</td>
-                        <td>02_01_6403_02_00096895479570261024063058000200.mp4</td>
+                        <td><a href="02_01_6403_02_00096895479570261024063058000200.mp4">02_01_6403_02_00096895479570261024063058000200.mp4</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -173,16 +192,15 @@
 
         <div class="card">
             <h2>🔗 Deployment Instructions</h2>
-            <p>Your analysis is ready to publish! Choose one of these free options:</p>
+            <p>Upload the entire <code>fleet-analysis-site</code> folder to one of these free hosts:</p>
             <ol>
-                <li><strong>GitHub Pages</strong> (Recommended) — <a href="https://github.com/new" target="_blank">Create a repo</a> → <a href="https://pages.github.com" target="_blank">Enable GitHub Pages</a> → Select this folder as source</li>
-                <li><strong>Netlify Drop</strong> — <a href="https://app.netlify.com/drop" target="_blank">Drag & drop</a> your entire folder</li>
-                <li><strong>Cloudflare Pages</strong> — <a href="https://www.cloudflare.com/products/pages" target="_blank">Sign up → Pages → Deploy from repo</a></li>
+                <li><strong>GitHub Pages</strong> (Recommended) — Create a repo → enable Pages → select this folder</li>
+                <li><strong>Netlify Drop</strong> — <a href="https://app.netlify.com/drop" target="_blank">app.netlify.com/drop</a> (drag & drop)</li>
+                <li><strong>Cloudflare Pages</strong> — Sign up → Pages → deploy from repo</li>
             </ol>
-            <p><em>All three are free and will give you a public URL like <code>https://yourusername.github.io/fleet-analysis-site/</code></em></p>
         </div>
         <div class="footer">
-            <p>Generated 2026-10-24 | Data from dashcam-analysis (2026-10-24 15:00–15:51 UTC) | ADAS/DMS risk assessment</p>
+            <p>Generated 2026-10-24 | ADAS/DMS risk assessment | All percentages audited</p>
         </div>
     </div>
 </body>
