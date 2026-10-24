@@ -1,0 +1,182 @@
+{
+  "analysis_period": "2026-10-24",
+  "scope": "ADAS/DMS - Vehicles with ID > 7 digits",
+  "total_clips_analyzed": 791,
+  "filter_rule": "vehicle_id must be numeric and strictly greater than 7 digits",
+  "top_risk_vehicles": [
+    {
+      "vehicle_id": "096895479219",
+      "plate": "TS93-3722MS",
+      "company": "AWT - TRANSPORT",
+      "warning_type": "FCW",
+      "possibility": "57.8%"
+    },
+    {
+      "vehicle_id": "096895418216",
+      "plate": "NDL5097-D",
+      "company": "AWT - TRANSPORT",
+      "warning_type": "FCW",
+      "possibility": "49.7%"
+    },
+    {
+      "vehicle_id": "096895479570",
+      "plate": "AW09-853YM",
+      "company": "Song Transport Kuching",
+      "warning_type": "FCW",
+      "possibility": "49.7%"
+    },
+    {
+      "vehicle_id": "096895479590",
+      "plate": "AW11-7775MR",
+      "company": "Song Transport Kuching",
+      "warning_type": "FCW",
+      "possibility": "34.0%"
+    },
+    {
+      "vehicle_id": "096892317954",
+      "plate": "2171WK",
+      "company": "SHANFARI SALALAH",
+      "warning_type": "FCW",
+      "possibility": "24.9%"
+    },
+    {
+      "vehicle_id": "096895479520",
+      "plate": "AW24-5447BM",
+      "company": "Song Transport Kuching",
+      "warning_type": "FCW",
+      "possibility": "24.9%"
+    },
+    {
+      "vehicle_id": "096879364953",
+      "plate": "AW12-7799MR",
+      "company": "AWT - TRANSPORT",
+      "warning_type": "FCW",
+      "possibility": "24.7%"
+    },
+    {
+      "vehicle_id": "096895479151",
+      "plate": "AW16-6797RA",
+      "company": "AWT - TRANSPORT",
+      "warning_type": "FCW",
+      "possibility": "24.9%"
+    },
+    {
+      "vehicle_id": "096892328474",
+      "plate": "5752HM",
+      "company": "SHANFARI SALALAH",
+      "warning_type": "Fatigue",
+      "possibility": "34.0%"
+    },
+    {
+      "vehicle_id": "096895479298",
+      "plate": "AW17-4583MH",
+      "company": "AWT - TRANSPORT",
+      "warning_type": "Fatigue",
+      "possibility": "24.9%"
+    }
+  ],
+  "top_10_risk_clips": [
+    {
+      "rank": 1,
+      "vehicle_id": "096895479219",
+      "plate": "TS93-3722MS",
+      "company": "AWT - TRANSPORT",
+      "warning_type": "FCW",
+      "possibility": "57.8%",
+      "frame": "assets/images/000035_20-260926-154359-154419-20020100.jpg",
+      "frame_view": "front"
+    },
+    {
+      "rank": 2,
+      "vehicle_id": "096895418216",
+      "plate": "NDL5097-D",
+      "company": "AWT - TRANSPORT",
+      "warning_type": "FCW",
+      "possibility": "49.7%",
+      "frame": "assets/images/000035_20-260926-153057-153117-20020100.jpg",
+      "frame_view": "front"
+    },
+    {
+      "rank": 3,
+      "vehicle_id": "096895479570",
+      "plate": "AW09-853YM",
+      "company": "Song Transport Kuching",
+      "warning_type": "FCW",
+      "possibility": "49.7%",
+      "frame": "assets/images/000035_20-260926-154339-154359-20020100.jpg",
+      "frame_view": "front"
+    },
+    {
+      "rank": 4,
+      "vehicle_id": "096895479590",
+      "plate": "AW11-7775MR",
+      "company": "Song Transport Kuching",
+      "warning_type": "FCW",
+      "possibility": "34.0%",
+      "frame": "assets/images/000021_20-260926-135337-135357-20020100.jpg",
+      "frame_view": "front"
+    },
+    {
+      "rank": 5,
+      "vehicle_id": "096892317954",
+      "plate": "2171WK",
+      "company": "SHANFARI SALALAH",
+      "warning_type": "FCW",
+      "possibility": "24.9%",
+      "frame": "assets/images/000028_20-260925-130216-130236-20020100.jpg",
+      "frame_view": "front"
+    },
+    {
+      "rank": 6,
+      "vehicle_id": "096895479520",
+      "plate": "AW24-5447BM",
+      "company": "Song Transport Kuching",
+      "warning_type": "FCW",
+      "possibility": "24.9%",
+      "frame": "assets/images/000035_20-260926-153208-153228-20020100.jpg",
+      "frame_view": "front"
+    },
+    {
+      "rank": 7,
+      "vehicle_id": "096879364953",
+      "plate": "AW12-7799MR",
+      "company": "AWT - TRANSPORT",
+      "warning_type": "FCW",
+      "possibility": "24.7%",
+      "frame": "assets/images/000035_20-260926-153219-153239-20020100.jpg",
+      "frame_view": "front"
+    },
+    {
+      "rank": 8,
+      "vehicle_id": "096895479151",
+      "plate": "AW16-6797RA",
+      "company": "AWT - TRANSPORT",
+      "warning_type": "FCW",
+      "possibility": "24.9%",
+      "frame": "assets/images/000035_20-260926-153317-153337-20020100.jpg",
+      "frame_view": "front"
+    },
+    {
+      "rank": 9,
+      "vehicle_id": "096892328474",
+      "plate": "5752HM",
+      "company": "SHANFARI SALALAH",
+      "warning_type": "Fatigue",
+      "possibility": "34.0%",
+      "frame": "assets/images/000021_20-260926-135337-135357-20020200.jpg",
+      "frame_view": "cabin"
+    },
+    {
+      "rank": 10,
+      "vehicle_id": "096895479298",
+      "plate": "AW17-4583MH",
+      "company": "AWT - TRANSPORT",
+      "warning_type": "Fatigue",
+      "possibility": "24.9%",
+      "frame": "assets/images/000021_20-260926-135337-135357-20020200.jpg",
+      "frame_view": "cabin"
+    }
+  ],
+  "deployment_ready": true,
+  "generated_at": "2026-10-24T16:00:00Z"
+}
