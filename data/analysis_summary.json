@@ -1,13 +1,13 @@
 {
   "analysis_date": "2026-10-24",
-  "scope": "ADAS/DMS - Vehicles with ID > 7 digits",
+  "scope": "ADAS/DMS — vehicles with an id longer than 7 digits",
   "total_clips_analyzed": 512,
-  "methodology": "Possibility = actual detected risk percentage from ML pipeline (YOLOv8n + MediaPipe). Blocked/corrupt/black = 0%. Bad-camera rate NOT used as risk.",
+  "methodology": "Possibility is the detected risk percentage from the ML pipeline (YOLOv8n lead-vehicle tracking for FCW, MediaPipe face landmarks for fatigue). Blocked / black / undecodable clips score 0% and are not ranked as risk.",
   "top_risk_clips": [
     {
       "rank": 1,
       "vehicle_id": "096895479219",
-      "plate": "2023-10-24",
+      "plate": "AW17-4583MH",
       "time": "2026-10-24 11:36:28",
       "camera": "driver",
       "warning_type": "Fatigue (DMS)",
@@ -18,7 +18,7 @@
     {
       "rank": 2,
       "vehicle_id": "096895479219",
-      "plate": "2023-10-24",
+      "plate": "AW17-4583MH",
       "time": "2026-10-24 08:48:15",
       "camera": "driver",
       "warning_type": "Fatigue (DMS)",
@@ -29,7 +29,7 @@
     {
       "rank": 3,
       "vehicle_id": "008060824232",
-      "plate": "2024-06-12",
+      "plate": "GPS32063-9838WA",
       "time": "2026-10-24 10:14:28",
       "camera": "driver",
       "warning_type": "Fatigue (DMS)",
@@ -40,7 +40,7 @@
     {
       "rank": 4,
       "vehicle_id": "096895479219",
-      "plate": "2023-10-24",
+      "plate": "AW17-4583MH",
       "time": "2026-10-24 16:50:33",
       "camera": "driver",
       "warning_type": "Fatigue (DMS)",
@@ -51,7 +51,7 @@
     {
       "rank": 5,
       "vehicle_id": "096895479219",
-      "plate": "2023-10-24",
+      "plate": "AW17-4583MH",
       "time": "2026-10-24 08:29:39",
       "camera": "driver",
       "warning_type": "Fatigue (DMS)",
@@ -62,7 +62,7 @@
     {
       "rank": 6,
       "vehicle_id": "005070625937",
-      "plate": "2024-06-12",
+      "plate": "GPS22550-5364MA",
       "time": "2026-10-24 07:48:41",
       "camera": "driver",
       "warning_type": "Fatigue (DMS)",
@@ -73,7 +73,7 @@
     {
       "rank": 7,
       "vehicle_id": "096895479219",
-      "plate": "2023-10-24",
+      "plate": "AW17-4583MH",
       "time": "2026-10-24 08:07:59",
       "camera": "driver",
       "warning_type": "Fatigue (DMS)",
@@ -84,7 +84,7 @@
     {
       "rank": 8,
       "vehicle_id": "005070628501",
-      "plate": "2024-06-12",
+      "plate": "GPS22539-4542WK",
       "time": "2026-10-24 06:38:06",
       "camera": "driver",
       "warning_type": "Fatigue (DMS)",
@@ -95,7 +95,7 @@
     {
       "rank": 9,
       "vehicle_id": "096895479219",
-      "plate": "2023-10-24",
+      "plate": "AW17-4583MH",
       "time": "2026-10-24 07:51:20",
       "camera": "driver",
       "warning_type": "Fatigue (DMS)",
@@ -106,7 +106,7 @@
     {
       "rank": 10,
       "vehicle_id": "096895479219",
-      "plate": "2023-10-24",
+      "plate": "AW17-4583MH",
       "time": "2026-10-24 16:53:16",
       "camera": "driver",
       "warning_type": "Fatigue (DMS)",
@@ -115,16 +115,37 @@
       "frame": "assets/images/02_03_6501_02_00096895479219261024165316010200_driver.jpg"
     }
   ],
-  "footnotes": [
-    "1. Total number of uploaded video clips analyzed: 512",
-    "2. Top 5 vehicles (plate number) which uploaded the most clips:",
-    "   - Vehicle 096895479321 (2023-11-05): 208 clips",
-    "   - Vehicle 096895479219 (2023-10-24): 101 clips",
-    "   - Vehicle 096895479570 (2023-11-20): 37 clips",
-    "   - Vehicle 096895479520 (2023-11-21): 28 clips",
-    "   - Vehicle 096895418216 (2023-10-31): 27 clips",
-    "3. List the top 5 vehicles uploaded most black or corrupted images (with the corresponding channel number):"
-  ],
+  "footnotes": {
+    "total_uploaded_clips": 512,
+    "most_clips_uploaded": [
+      {
+        "vehicle_id": "096895479321",
+        "plate": "AW22-718YW",
+        "clips": 208
+      },
+      {
+        "vehicle_id": "096895479219",
+        "plate": "AW17-4583MH",
+        "clips": 101
+      },
+      {
+        "vehicle_id": "096895479570",
+        "plate": "AW09-853YM",
+        "clips": 37
+      },
+      {
+        "vehicle_id": "096895479520",
+        "plate": "AW24-5447BM",
+        "clips": 28
+      },
+      {
+        "vehicle_id": "096895418216",
+        "plate": "AW15-5020HK",
+        "clips": 27
+      }
+    ],
+    "most_unusable_pictures": []
+  },
   "deployment_ready": true,
-  "generated_at": "2026-10-25T11:38:59.483495Z"
+  "generated_at": "2026-10-25T11:42:40.420640Z"
 }
