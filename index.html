@@ -1,1 +1,73 @@
-<html><head><meta charset="utf-8"><title>Fleet Video Analysis Portal</title><style>body{font-family:Arial,sans-serif;background:#f8f9fa}.container{max-width:1100px;margin:0 auto}.card{background:#fff;padding:20px;margin:20px 0;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}table{width:100%;border-collapse:collapse}th,td{padding:10px;border-bottom:1px solid #eee;text-align:left}th{background:#f1f3f5}td img{max-width:200px;border:1px solid #ddd}.highlight{background:#fff8e1}.footnotes{font-size:0.9em;color:#333}</style></head><body><div class="container"><h1>Fleet Video Analysis Portal</h1><p>ADAS/DMS Risk Assessment - Vehicle ID > 7 digits</p><div class="card"><h2>Top 10 Highest-Risk Clips (Vehicle ID > 7 digits)</h2><table><tr><th>#</th><th>Vehicle ID</th><th>Plate No.</th><th>Date/Time</th><th>Camera</th><th>Warning Type</th><th>Possibility</th><th>Frame</th></tr><tr class="highlight"><td>1</td><td>096895479219</td><td>2023-10-24</td><td>2026-10-24 11:36:28</td><td>driver</td><td>Fatigue (DMS)</td><td><b>95.0%</b></td><td><img src="assets/images/02_03_6504_02_00096895479219261024113628010200_driver.jpg"></td></tr><tr class="highlight"><td>2</td><td>096895479219</td><td>2023-10-24</td><td>2026-10-24 08:48:15</td><td>driver</td><td>Fatigue (DMS)</td><td><b>90.0%</b></td><td><img src="assets/images/02_03_6501_02_00096895479219261024084815010200_driver.jpg"></td></tr><tr class="highlight"><td>3</td><td>008060824232</td><td>2024-06-12</td><td>2026-10-24 10:14:28</td><td>driver</td><td>Fatigue (DMS)</td><td><b>82.0%</b></td><td><img src="assets/images/02_03_6501_02_00008060824232261024101428010200_driver.jpg"></td></tr><tr class="highlight"><td>4</td><td>096895479219</td><td>2023-10-24</td><td>2026-10-24 16:50:33</td><td>driver</td><td>Fatigue (DMS)</td><td><b>75.0%</b></td><td><img src="assets/images/02_03_6504_02_00096895479219261024165033010200_driver.jpg"></td></tr><tr class="highlight"><td>5</td><td>096895479219</td><td>2023-10-24</td><td>2026-10-24 08:29:39</td><td>driver</td><td>Fatigue (DMS)</td><td><b>70.0%</b></td><td><img src="assets/images/02_03_6501_02_00096895479219261024082939010200_driver.jpg"></td></tr><tr class="highlight"><td>6</td><td>005070625937</td><td>2024-06-12</td><td>2026-10-24 07:48:41</td><td>driver</td><td>Fatigue (DMS)</td><td><b>64.0%</b></td><td><img src="assets/images/02_03_6501_02_00005070625937261024074841010200_driver.jpg"></td></tr><tr class="highlight"><td>7</td><td>096895479219</td><td>2023-10-24</td><td>2026-10-24 08:07:59</td><td>driver</td><td>Fatigue (DMS)</td><td><b>62.0%</b></td><td><img src="assets/images/02_03_6501_02_00096895479219261024080759010200_driver.jpg"></td></tr><tr class="highlight"><td>8</td><td>005070628501</td><td>2024-06-12</td><td>2026-10-24 06:38:06</td><td>driver</td><td>Fatigue (DMS)</td><td><b>60.0%</b></td><td><img src="assets/images/02_03_6501_02_00005070628501261024063806010200_driver.jpg"></td></tr><tr class="highlight"><td>9</td><td>096895479219</td><td>2023-10-24</td><td>2026-10-24 07:51:20</td><td>driver</td><td>Fatigue (DMS)</td><td><b>60.0%</b></td><td><img src="assets/images/02_03_6501_02_00096895479219261024075120010200_driver.jpg"></td></tr><tr class="highlight"><td>10</td><td>096895479219</td><td>2023-10-24</td><td>2026-10-24 16:53:16</td><td>driver</td><td>Fatigue (DMS)</td><td><b>60.0%</b></td><td><img src="assets/images/02_03_6501_02_00096895479219261024165316010200_driver.jpg"></td></tr></table></div><div class="card"><p><b>Methodology:</b> Possibility = actual detected risk from ML Pipeline (YOLOv8n + MediaPipe). Camera Blocked/File Corrupt/Black Screen = 0%. Analyzed 512 clips from 2026-10-24. <b>Top risk:</b> 096895479219 (2023-10-24) 95.0% (driver).</p></div><div class="card footnotes"><h3>Footnotes</h3><p>1. Total number of uploaded video clips analyzed: 512</p><p>2. Top 5 vehicles (plate number) which uploaded the most clips:</p><p>   - Vehicle 096895479321 (2023-11-05): 208 clips</p><p>   - Vehicle 096895479219 (2023-10-24): 101 clips</p><p>   - Vehicle 096895479570 (2023-11-20): 37 clips</p><p>   - Vehicle 096895479520 (2023-11-21): 28 clips</p><p>   - Vehicle 096895418216 (2023-10-31): 27 clips</p><p>3. List the top 5 vehicles uploaded most black or corrupted images (with the corresponding channel number):</p></div><div class="footer"><p><a href="https://jonwusg.github.io/fleet-analysis-site/">Live on GitHub Pages</a> | Generated 2026-10-25 11:38:59</p></div></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fleet Video Analysis Portal</title>
+<style>
+ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6;
+        margin: 0; padding: 24px; background: #f6f7f9; color: #212529; }
+ .container { max-width: 1180px; margin: 0 auto; }
+ h1 { color: #22303c; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-bottom: 4px; }
+ .sub { color: #5a6b7b; margin-top: 0; }
+ .card { background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,.08);
+          padding: 22px; margin: 22px 0; }
+ .card h2 { margin-top: 0; color: #2c3e50; font-size: 1.2rem; }
+ table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: .94rem; }
+ th, td { padding: 10px 12px; border-bottom: 1px solid #eceff1; text-align: left; vertical-align: top; }
+ th { background: #f1f3f5; font-weight: 600; white-space: nowrap; }
+ td img { width: 200px; height: auto; border: 1px solid #dfe3e6; border-radius: 4px; display: block; }
+ tr.highlight { background: #fff8e1; }
+ code { font-size: .88em; color: #2f4a63; }
+ .foot { font-size: .92rem; color: #37474f; }
+ .foot ol { padding-left: 20px; }
+ .foot ul { margin: 6px 0 14px; }
+ .foot li { margin: 3px 0; }
+ .top { background: #eaf4ff; border-left: 4px solid #3498db; padding: 10px 14px;
+         border-radius: 4px; margin-top: 12px; }
+ .page-footer { text-align: center; color: #8494a3; font-size: .85rem; margin: 30px 0 8px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Fleet Video Analysis Portal</h1>
+  <p class="sub">ADAS/DMS risk assessment &mdash; vehicles with an id longer than 7 digits &mdash; clips recorded 2026-10-24</p>
+
+  <div class="card">
+    <h2>Top 10 highest-risk clips</h2>
+    <table>
+      <thead>
+        <tr><th>#</th><th>Vehicle ID</th><th>Plate No.</th><th>Date/Time</th>
+            <th>Camera</th><th>Warning Type</th><th>Possibility</th><th>Frame</th></tr>
+      </thead>
+      <tbody>
+        <tr class="highlight"><td>1</td><td><code>096895479219</code></td><td>AW17-4583MH</td><td>2026-10-24 11:36:28</td><td>driver</td><td>Fatigue (DMS)</td><td><strong>95.0%</strong></td><td><img src="assets/images/02_03_6504_02_00096895479219261024113628010200_driver.jpg" alt="Fatigue (DMS) — 95.0%"></td></tr><tr class="highlight"><td>2</td><td><code>096895479219</code></td><td>AW17-4583MH</td><td>2026-10-24 08:48:15</td><td>driver</td><td>Fatigue (DMS)</td><td><strong>90.0%</strong></td><td><img src="assets/images/02_03_6501_02_00096895479219261024084815010200_driver.jpg" alt="Fatigue (DMS) — 90.0%"></td></tr><tr class="highlight"><td>3</td><td><code>008060824232</code></td><td>GPS32063-9838WA</td><td>2026-10-24 10:14:28</td><td>driver</td><td>Fatigue (DMS)</td><td><strong>82.0%</strong></td><td><img src="assets/images/02_03_6501_02_00008060824232261024101428010200_driver.jpg" alt="Fatigue (DMS) — 82.0%"></td></tr><tr class="highlight"><td>4</td><td><code>096895479219</code></td><td>AW17-4583MH</td><td>2026-10-24 16:50:33</td><td>driver</td><td>Fatigue (DMS)</td><td><strong>75.0%</strong></td><td><img src="assets/images/02_03_6504_02_00096895479219261024165033010200_driver.jpg" alt="Fatigue (DMS) — 75.0%"></td></tr><tr class="highlight"><td>5</td><td><code>096895479219</code></td><td>AW17-4583MH</td><td>2026-10-24 08:29:39</td><td>driver</td><td>Fatigue (DMS)</td><td><strong>70.0%</strong></td><td><img src="assets/images/02_03_6501_02_00096895479219261024082939010200_driver.jpg" alt="Fatigue (DMS) — 70.0%"></td></tr><tr class="highlight"><td>6</td><td><code>005070625937</code></td><td>GPS22550-5364MA</td><td>2026-10-24 07:48:41</td><td>driver</td><td>Fatigue (DMS)</td><td><strong>64.0%</strong></td><td><img src="assets/images/02_03_6501_02_00005070625937261024074841010200_driver.jpg" alt="Fatigue (DMS) — 64.0%"></td></tr><tr class="highlight"><td>7</td><td><code>096895479219</code></td><td>AW17-4583MH</td><td>2026-10-24 08:07:59</td><td>driver</td><td>Fatigue (DMS)</td><td><strong>62.0%</strong></td><td><img src="assets/images/02_03_6501_02_00096895479219261024080759010200_driver.jpg" alt="Fatigue (DMS) — 62.0%"></td></tr><tr class="highlight"><td>8</td><td><code>005070628501</code></td><td>GPS22539-4542WK</td><td>2026-10-24 06:38:06</td><td>driver</td><td>Fatigue (DMS)</td><td><strong>60.0%</strong></td><td><img src="assets/images/02_03_6501_02_00005070628501261024063806010200_driver.jpg" alt="Fatigue (DMS) — 60.0%"></td></tr><tr class="highlight"><td>9</td><td><code>096895479219</code></td><td>AW17-4583MH</td><td>2026-10-24 07:51:20</td><td>driver</td><td>Fatigue (DMS)</td><td><strong>60.0%</strong></td><td><img src="assets/images/02_03_6501_02_00096895479219261024075120010200_driver.jpg" alt="Fatigue (DMS) — 60.0%"></td></tr><tr class="highlight"><td>10</td><td><code>096895479219</code></td><td>AW17-4583MH</td><td>2026-10-24 16:53:16</td><td>driver</td><td>Fatigue (DMS)</td><td><strong>60.0%</strong></td><td><img src="assets/images/02_03_6501_02_00096895479219261024165316010200_driver.jpg" alt="Fatigue (DMS) — 60.0%"></td></tr>
+      </tbody>
+    </table>
+    <div class="top">
+      Highest risk in this batch: <code>096895479219</code> &mdash; AW17-4583MH,
+      <strong>95.0%</strong> (driver camera, 2026-10-24 11:36:28).
+    </div>
+  </div>
+
+  <div class="card foot">
+    <h2>Footnotes</h2>
+    <ol>
+      <li>Total uploaded video clips analysed: <strong>512</strong>.</li>
+      <li>Top 5 vehicles that uploaded the most clips:<ul><li><code>096895479321</code> — AW22-718YW: <strong>208</strong> clips</li><li><code>096895479219</code> — AW17-4583MH: <strong>101</strong> clips</li><li><code>096895479570</code> — AW09-853YM: <strong>37</strong> clips</li><li><code>096895479520</code> — AW24-5447BM: <strong>28</strong> clips</li><li><code>096895418216</code> — AW15-5020HK: <strong>27</strong> clips</li></ul></li>
+      <li>Top 5 vehicles with the most black / corrupted / blocked pictures:<ul><li>none</li></ul></li>
+    </ol>
+    <p><strong>Method.</strong> Possibility is the detected risk from the ML pipeline &mdash; front camera (FCW) uses
+    YOLOv8n lead-vehicle tracking with time-to-collision and closing rate; driver camera (fatigue) uses MediaPipe
+    face landmarks with eye-aspect-ratio closure runs and yawns. A camera that is blocked, black, or an
+    undecodable file scores 0% &mdash; no footage means no risk can be assessed, so those clips are never ranked.
+    Plate numbers come from <code>data/plate_map.json</code>.</p>
+  </div>
+
+  <p class="page-footer">
+    Live on GitHub Pages: <a href="https://jonwusg.github.io/fleet-analysis-site/">jonwusg.github.io/fleet-analysis-site</a>
+    &nbsp;|&nbsp; generated 2026-10-25 11:42:40
+  </p>
+</div>
+</body>
+</html>
