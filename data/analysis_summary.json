@@ -105,6 +105,16 @@
       "frame": "assets/images/02_03_6501_02_00096895479219261024165316010200_driver.jpg"
     }
   ],
+  "footnotes": [
+    "1. Total number of uploaded video clips analyzed: 512",
+    "2. Top 5 vehicles (by vehicle ID) uploaded the most clips:",
+    "   - Vehicle 096895479321: 208 clips",
+    "   - Vehicle 096895479219: 101 clips",
+    "   - Vehicle 096895479570: 37 clips",
+    "   - Vehicle 096895479520: 28 clips",
+    "   - Vehicle 096895418216: 27 clips",
+    "3. Top 5 vehicles with most black/corrupted/blocked images (with channel):"
+  ],
   "deployment_ready": true,
-  "generated_at": "2026-10-25T11:08:59.454529Z"
+  "generated_at": "2026-10-25T11:26:36.696217Z"
 }
