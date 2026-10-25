@@ -1,8 +1,8 @@
 {
   "analysis_date": "2026-10-24",
-  "scope": "ADAS/DMS — vehicles with an id longer than 7 digits",
+  "scope": "ADAS/DMS - vehicles with an id longer than 7 digits",
   "total_clips_analyzed": 512,
-  "methodology": "Possibility is the detected risk percentage from the ML pipeline (YOLOv8n lead-vehicle tracking for FCW, MediaPipe face landmarks for fatigue). Blocked / black / undecodable clips score 0% and are not ranked as risk.",
+  "methodology": "Possibility is the detected risk percentage from the ML pipeline (YOLOv8n lead-vehicle tracking for FCW, MediaPipe face landmarks for fatigue). Black / undecodable / no-driver-in-view clips score 0% and are not ranked as risk.",
   "top_risk_clips": [
     {
       "rank": 1,
@@ -144,8 +144,57 @@
         "clips": 27
       }
     ],
-    "most_unusable_pictures": []
+    "most_unusable_pictures": [
+      {
+        "vehicle_id": "096895479520",
+        "plate": "AW24-5447BM",
+        "channel": "65",
+        "clips": 16,
+        "reasons": [
+          "no driver in view"
+        ]
+      },
+      {
+        "vehicle_id": "096895418216",
+        "plate": "AW15-5020HK",
+        "channel": "65",
+        "clips": 12,
+        "reasons": [
+          "no driver in view"
+        ]
+      },
+      {
+        "vehicle_id": "096895479590",
+        "plate": "AW11-7775MR",
+        "channel": "65",
+        "clips": 12,
+        "reasons": [
+          "no driver in view"
+        ]
+      },
+      {
+        "vehicle_id": "096895479298",
+        "plate": "AW19-894WA",
+        "channel": "65",
+        "clips": 11,
+        "reasons": [
+          "no driver in view"
+        ]
+      },
+      {
+        "vehicle_id": "096879364953",
+        "plate": "AW12-7799MR",
+        "channel": "65",
+        "clips": 9,
+        "reasons": [
+          "no driver in view"
+        ]
+      }
+    ],
+    "black_or_corrupt_clips": 0,
+    "no_driver_in_view_clips": 81,
+    "darkest_luma": 20.9
   },
   "deployment_ready": true,
-  "generated_at": "2026-10-25T11:42:40.420640Z"
+  "generated_at": "2026-10-25T11:47:34.484001Z"
 }
