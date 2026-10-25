@@ -1,44 +1,110 @@
 {
-  "analysis_period": "2026-09-26 (available data)",
-  "requested_period": "2026-10-24 (no ML analysis available)",
+  "analysis_date": "2026-10-24",
   "scope": "ADAS/DMS - Vehicles with ID > 7 digits",
-  "total_clips_for_gt7_vehicles": 3,
-  "methodology": "Possibility = actual detected risk percentage. Camera Blocked / File Corrupt / Black Screen = 0%. Bad-camera rate is NOT used as risk.",
+  "total_clips_analyzed": 512,
+  "methodology": "Possibility = actual detected risk percentage from ML pipeline (YOLOv8n + MediaPipe). Blocked/corrupt/black = 0%. Bad-camera rate NOT used as risk.",
   "top_risk_clips": [
     {
       "rank": 1,
-      "vehicle_id": "096892328474",
-      "plate": "5752HM",
-      "company": "SHANFARI SALALAH",
-      "warning_type": "FCW",
-      "possibility": "12%",
-      "frame": "assets/images/02_64_6401_02_00096892328474260926114216000200.jpg",
-      "frame_view": "front (ch01)",
-      "detection": "same-lane FCW 12% (moderate). Lead vehicle closed 45.6 m -> 13.6 m over 9.4 s"
+      "vehicle_id": "096895479219",
+      "time": "2026-10-24 11:36:28",
+      "camera": "driver",
+      "warning_type": "Fatigue (DMS)",
+      "possibility": "95.0",
+      "behaviors": "driver fatigue 95.0% (10 closure run(s), max 44 fr; 2 yawn(s); low open-EAR p95=0.18)",
+      "frame": "assets/images/02_03_6504_02_00096895479219261024113628010200_driver.jpg"
     },
     {
       "rank": 2,
       "vehicle_id": "096895479219",
-      "plate": "TS93-3722MS",
-      "company": "AWT - TRANSPORT",
-      "warning_type": "FCW",
-      "possibility": "0%",
-      "frame": "assets/images/02_01_6401_02_00096895479219260926114356000200.jpg",
-      "frame_view": "front (ch01)",
-      "detection": "NO same-lane FCW - automatic 55% was FALSE POSITIVE, withdrawn by audit"
+      "time": "2026-10-24 08:48:15",
+      "camera": "driver",
+      "warning_type": "Fatigue (DMS)",
+      "possibility": "90.0",
+      "behaviors": "driver fatigue 90.0% (5 closure run(s), max 16 fr; 3 yawn(s))",
+      "frame": "assets/images/02_03_6501_02_00096895479219261024084815010200_driver.jpg"
     },
     {
       "rank": 3,
-      "vehicle_id": "096871959302",
-      "plate": "—",
-      "company": "DVR - TEST",
+      "vehicle_id": "008060824232",
+      "time": "2026-10-24 10:14:28",
+      "camera": "driver",
       "warning_type": "Fatigue (DMS)",
-      "possibility": "0%",
-      "frame": "assets/images/02_65_6513_02_00096871959302260926114257010200.jpg",
-      "frame_view": "driver-facing (ch03/DMS)",
-      "detection": "Camera Blocked - no face visible, drowsiness NOT ASSESSABLE"
+      "possibility": "82.0",
+      "behaviors": "driver fatigue 82.0% (4 closure run(s), max 12 fr; 3 yawn(s))",
+      "frame": "assets/images/02_03_6501_02_00008060824232261024101428010200_driver.jpg"
+    },
+    {
+      "rank": 4,
+      "vehicle_id": "096895479219",
+      "time": "2026-10-24 16:50:33",
+      "camera": "driver",
+      "warning_type": "Fatigue (DMS)",
+      "possibility": "75.0",
+      "behaviors": "driver fatigue 75.0% (11 closure run(s), max 16 fr; low open-EAR p95=0.19)",
+      "frame": "assets/images/02_03_6504_02_00096895479219261024165033010200_driver.jpg"
+    },
+    {
+      "rank": 5,
+      "vehicle_id": "096895479219",
+      "time": "2026-10-24 08:29:39",
+      "camera": "driver",
+      "warning_type": "Fatigue (DMS)",
+      "possibility": "70.0",
+      "behaviors": "driver fatigue 70.0% (6 closure run(s), max 12 fr; 1 yawn(s))",
+      "frame": "assets/images/02_03_6501_02_00096895479219261024082939010200_driver.jpg"
+    },
+    {
+      "rank": 6,
+      "vehicle_id": "005070625937",
+      "time": "2026-10-24 07:48:41",
+      "camera": "driver",
+      "warning_type": "Fatigue (DMS)",
+      "possibility": "64.0",
+      "behaviors": "driver fatigue 64.0% (3 closure run(s), max 12 fr; 2 yawn(s))",
+      "frame": "assets/images/02_03_6501_02_00005070625937261024074841010200_driver.jpg"
+    },
+    {
+      "rank": 7,
+      "vehicle_id": "096895479219",
+      "time": "2026-10-24 08:07:59",
+      "camera": "driver",
+      "warning_type": "Fatigue (DMS)",
+      "possibility": "62.0",
+      "behaviors": "driver fatigue 62.0% (4 closure run(s), max 16 fr; 1 yawn(s))",
+      "frame": "assets/images/02_03_6501_02_00096895479219261024080759010200_driver.jpg"
+    },
+    {
+      "rank": 8,
+      "vehicle_id": "005070628501",
+      "time": "2026-10-24 06:38:06",
+      "camera": "driver",
+      "warning_type": "Fatigue (DMS)",
+      "possibility": "60.0",
+      "behaviors": "driver fatigue 60.0% (6 closure run(s), max 12 fr)",
+      "frame": "assets/images/02_03_6501_02_00005070628501261024063806010200_driver.jpg"
+    },
+    {
+      "rank": 9,
+      "vehicle_id": "096895479219",
+      "time": "2026-10-24 07:51:20",
+      "camera": "driver",
+      "warning_type": "Fatigue (DMS)",
+      "possibility": "60.0",
+      "behaviors": "driver fatigue 60.0% (7 closure run(s), max 40 fr)",
+      "frame": "assets/images/02_03_6501_02_00096895479219261024075120010200_driver.jpg"
+    },
+    {
+      "rank": 10,
+      "vehicle_id": "096895479219",
+      "time": "2026-10-24 16:53:16",
+      "camera": "driver",
+      "warning_type": "Fatigue (DMS)",
+      "possibility": "60.0",
+      "behaviors": "driver fatigue 60.0% (6 closure run(s), max 40 fr)",
+      "frame": "assets/images/02_03_6501_02_00096895479219261024165316010200_driver.jpg"
     }
   ],
   "deployment_ready": true,
-  "generated_at": "2026-10-24T17:00:00Z"
+  "generated_at": "2026-10-25T11:08:59.454529Z"
 }
